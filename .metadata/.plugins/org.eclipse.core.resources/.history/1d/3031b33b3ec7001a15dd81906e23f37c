@@ -1,0 +1,29 @@
+<Players>
+
+	<Player>
+		<ID>1</ID>
+		<Name>
+			<FName>Michael</FName>
+			<LName>Jordan</LName>
+		</Name>
+		<Address addressType="main">
+			<City>Chicago</City>
+			<Street>Arbedu</Street>
+			<Number>23</Number>
+		</Address>
+	</Player>
+
+	<Player>
+		<ID>2</ID>
+		<Name>
+			<FName>Ervin</FName>
+			<LName>Jhonson</LName>
+		</Name>
+		<Address addressType="main">
+			<City>Los Angles</City>
+			<Street>Forward</Street>
+			<Number>32</Number>
+		</Address>
+	</Player>	
+
+</Players>

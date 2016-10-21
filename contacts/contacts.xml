@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<CONTACTS>
+	<CONTACT>
+		<NAME>
+			<FIRST>Israel</FIRST>
+			<LAST>Israeli</LAST>
+		</NAME>
+		<GENDER>Male</GENDER>
+		<ADDRESS>
+			<STREET house="1" zip="64183">Dizengoff</STREET>
+			<CITY>Tel-Aviv</CITY>
+			<COUNTRY>Israel</COUNTRY>
+		</ADDRESS>
+		<PHONES>
+			<PHONE areaCode="03">5013344</PHONE>
+			<PHONE areaCode="054">5222143</PHONE>
+		</PHONES>
+	</CONTACT>
+	<CONTACT>
+		<NAME>
+			<FIRST>Golda</FIRST>
+			<LAST>Meir</LAST>
+		</NAME>
+		<GENDER>Female</GENDER>
+		<ADDRESS>
+			<STREET house="12" zip="50444">Eilat</STREET>
+			<CITY>Jerusalem</CITY>
+			<COUNTRY>Israel</COUNTRY>
+		</ADDRESS>
+		<PHONES>
+			<PHONE areaCode="02">6333214</PHONE>
+			<PHONE areaCode="052">4252144</PHONE>
+			<PHONE areaCode="02">7994433</PHONE>
+		</PHONES>
+	</CONTACT>
+	<CONTACT>
+			<NAME>
+				<FIRST>Yossi</FIRST>
+				<LAST>Shirizli</LAST>
+			</NAME>
+			<GENDER>Male</GENDER>
+			<ADDRESS>
+				<STREET house="1" zip="64183">Dizefdfdfngoff</STREET>
+				<CITY>Tel-Adfdviv</CITY>
+				<COUNTRY>Isdfdfrael</COUNTRY>
+			</ADDRESS>
+			<PHONES>
+				<PHONE areaCode="03">5555555</PHONE>
+				<PHONE areaCode="054">2222222</PHONE>
+				<PHONE areaCode="051">1112223</PHONE>
+			</PHONES>
+	</CONTACT>
+</CONTACTS>

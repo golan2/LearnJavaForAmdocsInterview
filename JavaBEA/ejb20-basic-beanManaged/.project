@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ejb20-basic-beanManaged</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>build</name>
+			<type>2</type>
+			<location>C:/bea/weblogic81/samples/server/examples/src/examples/ejb20/basic/beanManaged/build</location>
+		</link>
+		<link>
+			<name>beanManaged</name>
+			<type>2</type>
+			<location>C:/bea/weblogic81/samples/server/examples/src/examples/ejb20/basic/beanManaged</location>
+		</link>
+	</linkedResources>
+</projectDescription>

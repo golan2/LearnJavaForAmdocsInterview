@@ -1,0 +1,28 @@
+<Players>
+
+	<Player>
+		<Number>23</Number>
+		<Name>
+			<FName>Michael</FName>
+			<LName>Jordan</LName>
+		</Name>
+		<Address addressType="main">
+			<City>Chicago</City>
+			<Street>Arbedu</Street>
+			
+		</Address>
+	</Player>
+
+	<Player>
+		<Number>32</Number>
+		<Name>
+			<FName>Ervin</FName>
+			<LName>Jhonson</LName>
+		</Name>
+		<Team>
+			<City>Los Angles</City>
+			<Nickname>Lakers</Nickname>
+		</Address>
+	</Player>	
+
+</Players>

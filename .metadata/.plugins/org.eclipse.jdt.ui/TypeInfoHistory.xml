@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeInfoHistroy>
+<typeInfo name="TreeSet" package="java.util" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/util/TreeSet.class" modifiers="33"/>
+<typeInfo name="Vector" package="java.util" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/util/Vector.class" modifiers="33"/>
+<typeInfo name="LinkedList" package="java.util" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/util/LinkedList.class" modifiers="33"/>
+<typeInfo name="Error" package="java.lang" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/lang/Error.class" modifiers="33"/>
+<typeInfo name="Remote" package="java.rmi" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/rmi/Remote.class" modifiers="1537"/>
+<typeInfo name="Serializable" package="java.io" enclosingTypes="" path="C:\Program Files\Java\j2re1.4.1_04\lib\rt.jar|java/io/Serializable.class" modifiers="1537"/>
+<typeInfo name="Compute" package="compute" enclosingTypes="" path="/rmiCompute/compute/Compute.java" modifiers="513"/>
+</typeInfoHistroy>

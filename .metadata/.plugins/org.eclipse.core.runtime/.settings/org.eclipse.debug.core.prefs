@@ -1,0 +1,3 @@
+#Sat Jan 14 23:49:41 GMT+02:00 2006
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<watchExpressions>\r\n<expression text\="sock" enabled\="true"/>\r\n<expression text\="result" enabled\="true"/>\r\n</watchExpressions>\r\n
+eclipse.preferences.version=1

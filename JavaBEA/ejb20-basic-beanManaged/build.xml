@@ -1,0 +1,119 @@
+<project name="ejb20-basic-beanManaged" default="all" basedir=".">
+
+  <!-- set global properties for this build -->
+  <property environment="env"/>
+  <property file="../../../../examples.properties"/>
+  <property name="build.compiler" value="${compiler}"/>
+  <property name="build.compiler" value="extJavac"/>
+  <property name="source" value="."/>
+  <property name="build" value="${source}/build"/>
+  <property name="dist" value="${source}/dist"/>
+
+  <target name="all" depends="clean, init, compile_ejb, jar.ejb, appc, ear_app,
+    compile_webapp, compile_client"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile
+    and copy the deployment descriptors into it-->
+    <mkdir dir="${build}"/>
+    <mkdir dir="${build}/META-INF"/>
+    <mkdir dir="${dist}"/>
+    <copy todir="${build}/META-INF">
+      <fileset dir="${source}">
+        <include name="ejb-jar.xml"/>
+        <include name="weblogic-ejb-jar.xml"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- Compile ejb classes into the build directory (jar preparation) -->
+  <target name="compile_ejb">
+    <javac srcdir="${source}" destdir="${build}"
+       includes="Account.java, AccountHome.java, ProcessingErrorException.java,
+         AccountBean.java"/>
+  </target>
+
+  <!-- Update ejb jar file or create it if it doesn't exist, including XML 
+    deployment descriptors -->
+  <target name="jar.ejb"  depends="compile_ejb">
+    <jar jarfile="${dist}/ejb20_basic_beanManaged.jar"
+      basedir="${build}"
+      update="yes">
+    </jar>
+  </target>
+
+  <target name="appc" depends="jar.ejb">
+    <wlappc debug="${debug}"
+      source="${dist}/ejb20_basic_beanManaged.jar"
+      />
+  </target>
+
+  <!-- Put the ejb into an ear, to be deployed from the ${apps.dir} dir -->
+  <target name="ear_app" depends="jar.ejb">
+    <ear earfile="${apps.dir}/ejb20_basic_beanManaged.ear" appxml="${source}/application.xml">
+      <fileset dir="${dist}" includes="ejb20_basic_beanManaged.jar"/>
+    </ear>
+  </target>
+
+  <!-- Copy the ejb client jar file to the WEB-INF/lib directory of 
+    the webapp.  This ensures that the EJB can be accessed by JSPs of the 
+    Examples WebApp-->
+  <target name="compile_webapp">
+    <copy file="${user.dir}/ejb20_basic_beanManaged_client.jar" tofile="${ex.webapp.dir}/WEB-INF/lib/ejb20_basic_beanManaged_client.jar"/>
+    <copy todir="${ex.webapp.dir}">
+      <fileset dir="${examples.src.dir}/examples/jsp" includes="EJBeanManagedClient.jsp"/>
+    </copy>
+  </target>
+
+  <!-- Compile client app into the clientclasses directory, and move the client jar file (created by appc) there as well -->
+  <target name="compile_client">
+    <move file="${user.dir}/ejb20_basic_beanManaged_client.jar" tofile="${client.classes.dir}/ejb20_basic_beanManaged_client.jar"/>
+    <javac srcdir="${source}"
+      destdir="${client.classes.dir}"
+      includes="Client.java"
+      classpath="${ex.classpath};${client.classes.dir}/ejb20_basic_beanManaged_client.jar"
+    />
+  </target>
+
+  <target name="clean">
+    <delete dir="${build}"/>
+  </target>
+
+  <!-- Setup database tables -->
+  <target name="db_setup_oracle" description="Database setup for Oracle" depends="check_params">
+    <antcall target="check_params_results"/>
+    <sql driver="oracle.jdbc.driver.OracleDriver"
+      url="jdbc:oracle:thin:@${db.host}:${db.port}:${sid}"
+      userid="${db.user}" password="${db.password}"
+      onerror="continue"
+      src="./table.ddl"/>
+  </target>
+
+  <!-- Check examples.properties database params -->
+  <target name="check_params">
+    <condition property="params.notset">
+    <or>
+      <equals arg1="${db.host}" arg2=""/>
+      <equals arg1="${db.user}" arg2=""/>
+    </or>
+    </condition>
+  </target>
+
+  <!-- Check results of check_params -->
+  <target name="check_params_results" if="params.notset">
+    <fail message="Database parameter not found.  Please edit ${samples.home}/server/examples/src/examples.properties setting your Oracle specific information."/>
+  </target>
+
+  <!-- Run the example -->
+  <target name="run">
+  <java classname="examples.ejb20.basic.beanManaged.Client" fork="yes" failonerror="true">
+    <arg value="t3://localhost:${port}"/>
+    <classpath>
+      <pathelement path="${ex.classpath};${client.classes.dir}/ejb20_basic_beanManaged_client.jar"/>
+    </classpath>
+  </java>
+  </target>
+
+</project>

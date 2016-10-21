@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wholeword" value="true"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="y" value="177"/>
+		<item key="selection" value="Team"/>
+		<item key="wrap" value="false"/>
+		<item key="casesensitive" value="true"/>
+		<item key="x" value="448"/>
+		<list key="findhistory">
+			<item value="Address"/>
+			<item value="Student&gt;"/>
+			<item value="Students"/>
+			<item value="testMySingelton"/>
+			<item value="seriali"/>
+			<item value="testFileReadAndWrite"/>
+			<item value="f()"/>
+			<item value="checkDefaultForInterfaces"/>
+		</list>
+		<list key="replacehistory" value="checkDefaultForInterfaces">
+			<item value="Team"/>
+			<item value="Player&gt;"/>
+			<item value="Players"/>
+			<item value="double"/>
+			<item value="m_radius"/>
+		</list>
+	</section>
+</section>

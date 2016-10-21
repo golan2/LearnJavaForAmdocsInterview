@@ -1,0 +1,10 @@
+<Students>
+	<Student>
+		<Name>
+			<FName></FName>
+			<LName></LName>
+		</Name>
+		<Address addressType="main">
+		</Address>
+	</Student>	
+</Students>

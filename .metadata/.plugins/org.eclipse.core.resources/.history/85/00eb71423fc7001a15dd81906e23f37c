@@ -1,0 +1,15 @@
+package jaxp;
+
+import java.util.Map;
+
+public class StatesMachine {
+	Map m_flags;
+	
+	public StatesMachine() {
+		m_flags = new 
+	}
+
+	public StatesMachine(boolean isSynchronized) {
+		
+	}
+}

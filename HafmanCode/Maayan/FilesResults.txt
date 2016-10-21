@@ -1,0 +1,105 @@
+---------------------ENG_DIST---------------
+
+Probablity is: 0.0218   Letter is: C    Huffman code: 00000
+Probablity is: 0.0228   Letter is: U    Huffman code: 00001
+Probablity is: 0.0467   Letter is: H    Huffman code: 0001
+Probablity is: 0.0474   Letter is: R    Huffman code: 0010
+Probablity is: 0.0514   Letter is: S    Huffman code: 0011
+Probablity is: 0.1031   Letter is: E    Huffman code: 010
+Probablity is: 0.0574   Letter is: N    Huffman code: 0110
+Probablity is: 0.0575   Letter is: I    Huffman code: 0111
+Probablity is: 0.0127   Letter is: B    Huffman code: 100000
+Probablity is: 0.0152   Letter is: G    Huffman code: 100001
+Probablity is: 0.0152   Letter is: P    Huffman code: 100010
+Probablity is: 0.0164   Letter is: Y    Huffman code: 100011
+Probablity is: 0.0632   Letter is: O    Huffman code: 1001
+Probablity is: 0.0317   Letter is: D    Huffman code: 10100
+Probablity is: 0.0321   Letter is: L    Huffman code: 10101
+Probablity is: 0.0642   Letter is: A    Huffman code: 1011
+Probablity is: 0.0083   Letter is: V    Huffman code: 1100000
+Probablity is: 0.0005   Letter is: Z    Huffman code: 1100001000
+Probablity is: 0.0008   Letter is: J    Huffman code: 1100001001
+Probablity is: 0.0008   Letter is: Q    Huffman code: 1100001010
+Probablity is: 0.0013   Letter is: X    Huffman code: 1100001011
+Probablity is: 0.0049   Letter is: K    Huffman code: 11000011
+Probablity is: 0.0175   Letter is: W    Huffman code: 110001
+Probablity is: 0.0198   Letter is: M    Huffman code: 110010
+Probablity is: 0.0208   Letter is: F    Huffman code: 110011
+Probablity is: 0.0796   Letter is: T    Huffman code: 1101
+Probablity is: 0.1859   Letter is: _    Huffman code: 111
+Average bits per simbol - Compression rate:     4.1155
+Compression ratio - 1.21492
+
+
+
+
+----------------------FRE_DIST--------------
+
+
+Probablity is: 0.0218   Letter is: c    Huffman code: 00000
+Probablity is: 0.0228   Letter is: p    Huffman code: 00001
+Probablity is: 0.0467   Letter is: o    Huffman code: 0001
+Probablity is: 0.0474   Letter is: u    Huffman code: 0010
+Probablity is: 0.0514   Letter is: t    Huffman code: 0011
+Probablity is: 0.1031   Letter is: e    Huffman code: 010
+Probablity is: 0.0574   Letter is: r    Huffman code: 0110
+Probablity is: 0.0575   Letter is: i    Huffman code: 0111
+Probablity is: 0.0127   Letter is: h    Huffman code: 100000
+Probablity is: 0.0152   Letter is: g    Huffman code: 100001
+Probablity is: 0.0152   Letter is: x    Huffman code: 100010
+Probablity is: 0.0164   Letter is: b    Huffman code: 100011
+Probablity is: 0.0632   Letter is: a    Huffman code: 1001
+Probablity is: 0.0317   Letter is: l    Huffman code: 10100
+Probablity is: 0.0321   Letter is: d    Huffman code: 10101
+Probablity is: 0.0642   Letter is: s    Huffman code: 1011
+Probablity is: 0.0083   Letter is: q    Huffman code: 1100000
+Probablity is: 0.0005   Letter is: w    Huffman code: 1100001000
+Probablity is: 0.0008   Letter is: j    Huffman code: 1100001001
+Probablity is: 0.0008   Letter is: k    Huffman code: 1100001010
+Probablity is: 0.0013   Letter is: z    Huffman code: 1100001011
+Probablity is: 0.0049   Letter is: y    Huffman code: 11000011
+Probablity is: 0.0175   Letter is: m    Huffman code: 110001
+Probablity is: 0.0198   Letter is: v    Huffman code: 110010
+Probablity is: 0.0208   Letter is: f    Huffman code: 110011
+Probablity is: 0.0796   Letter is: n    Huffman code: 1101
+Probablity is: 0.1859   Letter is: _    Huffman code: 111
+Average bits per simbol - Compression rate:     4.1155
+Compression ratio - 1.21492
+
+
+
+
+---------------------ENGLISH---------------
+
+Probablity is: 0.0428571        Letter is: L    Huffman code: 0000
+Probablity is: 0.0212987        Letter is: U    Huffman code: 00010
+Probablity is: 0.0114286        Letter is: K    Huffman code: 000110
+Probablity is: 0.0148052        Letter is: W    Huffman code: 000111
+Probablity is: 0.0927273        Letter is: E    Huffman code: 001
+Probablity is: 0.0477922        Letter is: S    Huffman code: 0100
+Probablity is: 0.0522078        Letter is: R    Huffman code: 0101
+Probablity is: 0.0545455        Letter is: I    Huffman code: 0110
+Probablity is: 0.0576623        Letter is: O    Huffman code: 0111
+Probablity is: 0.0290909        Letter is: C    Huffman code: 10000
+Probablity is: 0.0168831        Letter is: B    Huffman code: 100010
+Probablity is: 0.0171429        Letter is: F    Huffman code: 100011
+Probablity is: 0.0657143        Letter is: N    Huffman code: 1001
+Probablity is: 0.0680519        Letter is: T    Huffman code: 1010
+Probablity is: 0.0722078        Letter is: A    Huffman code: 1011
+Probablity is: 0.0192208        Letter is: G    Huffman code: 110000
+Probablity is: 0.00051948       Letter is: Q    Huffman code: 1100010000
+Probablity is: 0.00051948       Letter is: X    Huffman code: 1100010001
+Probablity is: 0.000779221      Letter is: Z    Huffman code: 1100010010
+Probablity is: 0.00103896       Letter is: J    Huffman code: 1100010011
+Probablity is: 0.00571429       Letter is: V    Huffman code: 11000101
+Probablity is: 0.0106494        Letter is: P    Huffman code: 1100011
+Probablity is: 0.0397403        Letter is: D    Huffman code: 11001
+Probablity is: 0.04     	Letter is: H    Huffman code: 11010
+Probablity is: 0.02     	Letter is: Y    Huffman code: 110110
+Probablity is: 0.0205195        Letter is: M    Huffman code: 110111
+Probablity is: 0.176883 	Letter is: _    Huffman code: 111
+Average bits per simbol - Compression rate:     4.17247
+Compression ratio - 1.19833
+
+
+

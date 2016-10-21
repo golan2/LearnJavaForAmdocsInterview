@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeInfoHistroy>
+<typeInfo name="EJBHome" package="javax.ejb" enclosingTypes="" path="C:\j2sdkee1.3.1\lib\j2ee.jar|javax/ejb/EJBHome.class" modifiers="1537"/>
+<typeInfo name="EJBObject" package="javax.ejb" enclosingTypes="" path="C:\j2sdkee1.3.1\lib\j2ee.jar|javax/ejb/EJBObject.class" modifiers="1537"/>
+<typeInfo name="SessionBean" package="javax.ejb" enclosingTypes="" path="C:\j2sdkee1.3.1\lib\j2ee.jar|javax/ejb/SessionBean.class" modifiers="1537"/>
+</typeInfoHistroy>

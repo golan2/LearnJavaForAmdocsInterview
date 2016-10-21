@@ -1,0 +1,63 @@
+package simpleserver;
+
+import   java.util.Vector;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import com.borland.jbcl.layout.*;
+
+/**
+ * <p>Title: </p>
+ * <p>Description: </p>
+ * <p>Copyright: Copyright (c) 2005</p>
+ * <p>Company: </p>
+ * @author not attributable
+ * @version 1.0
+ */
+
+public class ServerScreen extends JFrame {
+  JPanel contentPane;
+  BorderLayout borderLayout1 = new BorderLayout();
+  JPanel jPanel1 = new JPanel();
+  XYLayout xYLayout1 = new XYLayout();
+  JScrollPane jScrollPane1 = new JScrollPane();
+  JList ClientsList = new JList();
+
+  //Construct the frame
+  public ServerScreen() {
+    enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+    try {
+      jbInit();
+    }
+    catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  //Component initialization
+  private void jbInit() throws Exception  {
+    contentPane = (JPanel) this.getContentPane();
+    contentPane.setLayout(borderLayout1);
+    this.setSize(new Dimension(400, 300));
+    this.setTitle("Simple Server");
+    jPanel1.setLayout(xYLayout1);
+    contentPane.add(jPanel1, BorderLayout.CENTER);
+    jPanel1.add(jScrollPane1,  new XYConstraints(156, 38, 214, 207));
+    jScrollPane1.getViewport().add(ClientsList, null);
+
+    Vector v = new  Vector(10);
+    for (int i=0 ; i<10 ; i++) {
+      v.add(""+i);
+    }
+
+    ClientsList.setListData();
+  }
+
+  //Overridden so we can exit when window is closed
+  protected void processWindowEvent(WindowEvent e) {
+    super.processWindowEvent(e);
+    if (e.getID() == WindowEvent.WINDOW_CLOSING) {
+      System.exit(0);
+    }
+  }
+}
